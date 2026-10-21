@@ -1,1006 +1,1006 @@
 #include "unity.h"
 #include <stdio.h>
 #include <string.h>
-#include "winenv/winenv.h"
+#include "slotenv/slotenv.h"
 
 
 void test_parser_deep_export_000(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_0=value_0\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_001(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_1=value_1\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_002(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_2=value_2\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_003(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_3=value_3\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_004(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_4=value_4\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_005(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_5=value_5\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_006(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_6=value_6\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_007(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_7=value_7\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_008(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_8=value_8\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_009(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_9=value_9\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_010(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_10=value_10\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_011(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_11=value_11\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_012(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_12=value_12\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_013(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_13=value_13\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_014(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_14=value_14\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_015(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_15=value_15\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_016(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_16=value_16\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_017(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_17=value_17\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_018(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_18=value_18\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_019(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_19=value_19\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_020(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_20=value_20\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_021(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_21=value_21\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_022(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_22=value_22\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_023(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_23=value_23\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_024(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_24=value_24\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_025(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_25=value_25\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_026(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_26=value_26\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_027(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_27=value_27\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_028(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_28=value_28\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_029(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_29=value_29\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_030(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_30=value_30\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_031(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_31=value_31\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_032(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_32=value_32\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_033(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_33=value_33\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_034(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_34=value_34\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_035(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_35=value_35\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_036(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_36=value_36\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_037(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_37=value_37\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_038(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_38=value_38\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_039(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_39=value_39\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_040(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_40=value_40\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_041(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_41=value_41\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_042(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_42=value_42\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_043(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_43=value_43\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_044(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_44=value_44\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_045(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_45=value_45\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_046(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_46=value_46\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_047(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_47=value_47\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_048(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_48=value_48\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_049(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_49=value_49\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_050(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_50=value_50\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_051(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_51=value_51\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_052(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_52=value_52\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_053(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_53=value_53\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_054(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_54=value_54\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_055(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_55=value_55\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_056(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_56=value_56\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_057(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_57=value_57\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_058(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_58=value_58\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_059(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_59=value_59\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_060(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_60=value_60\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_061(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_61=value_61\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_062(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_62=value_62\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_063(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_63=value_63\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_064(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_64=value_64\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_065(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_65=value_65\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_066(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_66=value_66\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_067(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_67=value_67\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_068(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_68=value_68\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_069(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_69=value_69\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_070(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_70=value_70\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_071(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_71=value_71\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_072(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_72=value_72\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_073(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_73=value_73\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_074(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_74=value_74\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_075(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_75=value_75\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_076(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_76=value_76\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_077(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_77=value_77\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_078(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_78=value_78\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_079(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_79=value_79\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_080(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_80=value_80\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_081(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_81=value_81\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_082(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_82=value_82\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_083(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_83=value_83\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_084(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_84=value_84\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_085(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_85=value_85\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_086(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_86=value_86\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_087(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_87=value_87\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_088(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_88=value_88\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_089(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_89=value_89\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_090(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_90=value_90\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_091(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_91=value_91\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_092(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_92=value_92\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_093(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_93=value_93\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_094(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_94=value_94\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_095(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_95=value_95\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_096(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_96=value_96\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_097(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_97=value_97\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_098(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_98=value_98\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 
 void test_parser_deep_export_099(void) {
   char src[256];
   snprintf(src, sizeof(src), "export VAR_99=value_99\n");
-  winenv_doc_t *doc = NULL;
-  TEST_ASSERT_EQUAL_INT(0, winenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
-  TEST_ASSERT_EQUAL_INT(1, winenv_entry_exported(doc, 0));
-  winenv_doc_free(doc);
+  slotenv_doc_t *doc = NULL;
+  TEST_ASSERT_EQUAL_INT(0, slotenv_parse_memory(src, strlen(src), NULL, &doc, NULL));
+  TEST_ASSERT_EQUAL_INT(1, slotenv_entry_exported(doc, 0));
+  slotenv_doc_free(doc);
 }
 
 void run_parser_deep_tests(void) {
